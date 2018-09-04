@@ -1,0 +1,5 @@
+months = [month for month in row[0]]
+        def total_months(months):
+            return(int(len(months)))
+            return(sum(int(len(months))))
+        print(total_months(months))
