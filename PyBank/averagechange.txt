@@ -4,3 +4,13 @@
            return(change = int(row[1]-change))
            profloss.append(change)
     average_change = (sum(profloss)/int(len(profloss)))
+
+
+#change = int(next(monthlyanalysis, )
+    def change_in_profloss(profloss):
+        return(int(row[1]-change))
+        change = change_in_profloss(profloss)
+    for row in monthlyanalysis:
+        change_in_profloss(profloss)
+    profloss.append(change)
+    average_change = (sum(profloss)/int(len(profloss)))
