@@ -13,7 +13,7 @@ with open (election, newline="") as pypoll:
     for row in electiondata:
         Voter_ID.append(row[0])
         Candidate.append(row[2])
-#create Cadidate list abbreviated, call it candidate_list = []
+#for name in 
 Candidate_1 = [name for name in Candidate if name == candidate_list[0]]
 Candidate_2 = [name for name in Candidate if name == candidate_list[1]]
 Candidate_3 = [name for name in Candidate if name == candidate_list[2]]
@@ -26,6 +26,8 @@ Candidate_3_total = len(Candidate_3)
 Candidate_3_percentage = (Candidate_3_total/total_votes)*100
 Candidate_4_total = len(Candidate_4)
 Candidate_4_percentage = (Candidate_4_total/total_votes)*100
+
+#Figure out how to calculate Winner
 
 print("Election Results")
 print("-----------------------------")

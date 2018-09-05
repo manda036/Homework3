@@ -7,13 +7,14 @@ with open (profitloss, newline="") as pybank:
     monthlyanalysis = csv.reader(pybank, delimiter=",")
     next(monthlyanalysis, None)
     total_months = len(list(monthlyanalysis))
-    #change = int(next(monthlyanalysis, Profit/Loss Column)
-    def change_in_profloss(profloss):
+    first_row = next(monthlyanalysis)
+    change = int(first_row[1])
+    def change_in_profloss(change):
         return(int(row[1]-change))
-        change = change_in_profloss(profloss)
     for row in monthlyanalysis:
         net += int(row[1])
-        change_in_profloss(profloss)
+        change_in_profloss(change)
+        change = change_in_profloss(change)
     profloss.append(change)
     average_change = (sum(profloss)/int(len(profloss)))
     greatest_increase = max([value for value in profloss])
@@ -22,9 +23,9 @@ with open (profitloss, newline="") as pybank:
     monthlyanalysis = csv.reader(pybank, delimiter=",")
     next(monthlyanalysis, None)
     for row in monthlyanalysis:
-        if int(row[1])= greatest_increase:
+        if int(row[1]) == greatest_increase:
             month1 = (row[0])
-        if int(row[1])= greatest_decrease:
+        if int(row[1]) == greatest_decrease:
             month2 = (row[0])
 
 print("Financial Analysis")
