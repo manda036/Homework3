@@ -1,5 +1,0 @@
-new_electiondata = zip(Voter_ID, Candidate)
-no_county_info = os.path.join ("clean_election_data.csv")
-with open(no_county_info, "w", newline="") as clean_electiondata:
-    electionresults = csv.writer(clean_electiondata, delimiter=",")
-    electionresults.writerows(new_electiondata)
